@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
+import statsmodels.api as sm
 
 from config import (PATH_TO_GENERATION,
                     PATH_TO_WEATHER,
@@ -85,3 +86,12 @@ class ExploratoryDataAnalysis:
         for df in dfs:
             df[datetime_columns] = pd.to_datetime(df[datetime_columns], dayfirst=True)
         return tuple(dfs)
+
+    def _save_qqplot(self, column_to_plot: str):
+        sm.qqplot(self.df[column_to_plot], line='45')
+        plt.title(column_to_plot)
+        self._save_plot(EXPLORATORY_ANALYSIS, f'qqplot_{column_to_plot}')
+
+    def save_all_qqplot(self):
+        for column_to_plot in BOXPLOT_COLUMNS:
+            self._save_qqplot(column_to_plot)

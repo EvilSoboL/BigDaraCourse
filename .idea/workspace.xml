@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="812c4d32-031e-497b-a318-4a8cce37787d" name="Changes" comment="Выполнены pairplot для предварительного анализа данных">
-      <change afterPath="$PROJECT_DIR$/source/Plant_1_Weather_Sensor_Data.csv" afterDir="false" />
+    <list default="true" id="812c4d32-031e-497b-a318-4a8cce37787d" name="Changes" comment="Добавлен df с информацией о погоде, изменены boxplot и pairplot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis/exploratory.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis/exploratory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_AC_POWER.png" beforeDir="false" afterPath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_AC_POWER.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_DAILY_YIELD.png" beforeDir="false" afterPath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_DAILY_YIELD.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_DC_POWER.png" beforeDir="false" afterPath="$PROJECT_DIR$/output_data/exploratory_analysis/boxplot_DC_POWER.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_data/exploratory_analysis/pairplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/output_data/exploratory_analysis/pairplot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707449806904</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлен df с информацией о погоде, изменены boxplot и pairplot">
+      <option name="closed" value="true" />
+      <created>1707455556137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707455556137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +135,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Выполнены boxplot для предварительного анализа данных" />
     <MESSAGE value="Выполнены pairplot для предварительного анализа данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнены pairplot для предварительного анализа данных" />
+    <MESSAGE value="Добавлен df с информацией о погоде, изменены boxplot и pairplot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен df с информацией о погоде, изменены boxplot и pairplot" />
   </component>
 </project>
