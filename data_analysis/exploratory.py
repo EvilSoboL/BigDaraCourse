@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import seaborn as sns
 
 from config import SOURCE_DATA_DIR, EXPLORATORY_ANALYSIS, BOXPLOT_COLUMNS
 
@@ -28,7 +29,7 @@ class ExploratoryDataAnalysis:
     def create_exploratory_dir(self):
         os.makedirs(EXPLORATORY_ANALYSIS, exist_ok=True)
 
-    def save_box_plot(self, column_to_plot: str):
+    def save_boxplot(self, column_to_plot: str):
         plt.boxplot(self.df[column_to_plot])
         plt.title(column_to_plot)
         plt.ylabel('kW')
@@ -41,4 +42,9 @@ class ExploratoryDataAnalysis:
 
     def save_all_box_plot(self):
         for column_to_plot in BOXPLOT_COLUMNS:
-            self.save_box_plot(column_to_plot)
+            self.save_boxplot(column_to_plot)
+
+    def save_pairplot(self, column_to_drop):
+        sns.pairplot(self.df.drop(columns=column_to_drop))
+        plt.tight_layout()
+        self.save_plot(EXPLORATORY_ANALYSIS, 'pairplot')

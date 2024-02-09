@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="812c4d32-031e-497b-a318-4a8cce37787d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BigDataCourse.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_analysis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_analysis/exploratory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Plant_1_Generation_Data.csv" afterDir="false" />
+    <list default="true" id="812c4d32-031e-497b-a318-4a8cce37787d" name="Changes" comment="Выполнены boxplot для предварительного анализа данных">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis/exploratory.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis/exploratory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +87,19 @@
       <option name="presentableId" value="Default" />
       <updated>1707442499708</updated>
     </task>
+    <task id="LOCAL-00001" summary="Выполнены boxplot для предварительного анализа данных">
+      <option name="closed" value="true" />
+      <created>1707449219012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707449219012</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Выполнены boxplot для предварительного анализа данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнены boxplot для предварительного анализа данных" />
   </component>
 </project>

@@ -9,3 +9,4 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "output_data")
 EXPLORATORY_ANALYSIS = os.path.join(OUTPUT_DIR, "exploratory_analysis")
 
 BOXPLOT_COLUMNS = ['DC_POWER', 'AC_POWER', 'DAILY_YIELD']
+PAIRPLOT_DROP = ['PLANT_ID']
