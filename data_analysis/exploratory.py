@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os
 import seaborn as sns
 import statsmodels.api as sm
+import numpy as np
 
 from config import (PATH_TO_GENERATION,
                     PATH_TO_WEATHER,
@@ -46,8 +47,8 @@ class ExploratoryDataAnalysis:
     def get_source_df(self, rows_to_read: int):
         if not self.path_to_generation and self.path_to_weather:
             raise Warning("Атрибут path_to_generation или path_to_weather не задан!")
-        generation_df = pd.read_csv(self.path_to_generation, nrows=rows_to_read, usecols=self.columns_to_read_generation)
-        weather_df = pd.read_csv(self.path_to_weather, nrows=466, usecols=self.columns_to_read_weather)
+        generation_df = pd.read_csv(self.path_to_generation, usecols=self.columns_to_read_generation)
+        weather_df = pd.read_csv(self.path_to_weather, usecols=self.columns_to_read_weather)
         generation_df, weather_df = self._set_dtype_to_datetime(
             [generation_df, weather_df], 'DATE_TIME'
         )
@@ -95,3 +96,25 @@ class ExploratoryDataAnalysis:
     def save_all_qqplot(self):
         for column_to_plot in BOXPLOT_COLUMNS:
             self._save_qqplot(column_to_plot)
+
+    def save_correlation_matrix(self):
+        correlation_matrix = self.df.corr()
+        x_axis = correlation_matrix.columns
+        y_axis = x_axis
+
+        fig, ax = plt.subplots(figsize=(16, 9))
+
+        ax.matshow(correlation_matrix)
+
+        plt.xticks(range(len(x_axis)), x_axis, fontsize=7)
+        plt.yticks(range(len(y_axis)), y_axis, fontsize=7)
+
+        # Нанесение подписей на ячейки матрицы
+        for row in range(len(y_axis)):
+            for column in range(len(x_axis)):
+                value = correlation_matrix.iloc[row, column]
+                plt.text(column, row, str(np.round(value, decimals=2)), va='center', ha='center')
+
+        plt.tight_layout()
+
+        self._save_plot(EXPLORATORY_ANALYSIS, 'correlation_matrix')
